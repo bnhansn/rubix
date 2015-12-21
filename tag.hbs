@@ -1,0 +1,17 @@
+{{!< default}}
+
+<main class="page-content">
+
+	<header class="tag-header {{tag.name}}" {{#if tag.image}}style="background-image:url({{tag.image}})"{{/if}}>
+		<div class="container">
+			<h1 class="tag-name">{{tag.name}}</h1>
+		</div>
+	</header>
+
+	<div class="infinite-scroll container">
+	  {{> "loop"}}
+	</div>
+
+</main>
+
+<div class="search-results container"></div>

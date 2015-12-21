@@ -1,0 +1,30 @@
+{{!< default}}
+
+<main class="page-content">
+
+  {{#post}}
+
+    {{#if image}}
+    	<div class="post-image" style="background-image:url({{image}})"></div>
+    {{/if}}
+
+    <div class="container">
+
+	    <article class="{{post_class}}">
+	    	<header class="post-header">
+		      <div class="meta">{{date}}</div>
+		      <h1>{{title}}</h1>
+		      <p>{{tags}}</p>
+		    </header>
+	      <section>
+	        {{content}}
+	      </section>
+	    </article>
+
+		</div>
+
+	{{/post}}
+
+</main>
+
+<div class="search-results container"></div>

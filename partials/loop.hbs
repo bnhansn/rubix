@@ -1,0 +1,16 @@
+{{#foreach posts}}
+  <article class="{{post_class}} card">
+    {{#if image}}
+      <a href="{{url}}">
+        <img src="{{image}}" class="card-image">
+      </a>
+    {{/if}}
+    <div class="card-content">
+      <div class="tags">{{tags}}</div>
+      <h2><a href="{{url}}" class="card-title">{{{title}}}</a></h2>
+      <div class="excerpt">{{excerpt words="40"}}...</div>
+    </div>
+  </article>
+{{/foreach}}
+
+{{pagination}}

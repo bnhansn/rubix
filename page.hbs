@@ -1,0 +1,21 @@
+{{!< default}}
+
+<div class="page-ajax-holder">
+  
+  <nav class="subcategories">
+  </nav>
+
+	<main class="post-ajax-holder">
+	  
+	  {{#post}}
+	    <article class="{{post_class}}">
+	      <h1>{{title}}</h1>
+	      <section>
+	        {{content}}
+	      </section>
+	    </article>
+	  {{/post}}
+	
+	</main>
+
+</div>
